@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/10Volo/score-card/issues"
   },
-  "homepage": "https://github.com/10Volo/score-card#readme"
+  "homepage": "https://github.com/10Volo/score-card#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "precss": "^3.1.2"
+  }
 }
