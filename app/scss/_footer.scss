@@ -9,6 +9,7 @@ footer {
 	padding-top: 70px;
 
 	img.logo {
+		width: 37%;
 		margin-bottom: 30px;
 	}
 
@@ -17,6 +18,12 @@ footer {
 		color: $textDark;
 		line-height: 26px;
 		letter-spacing: 0.88px;
+	}
+
+	.get-full-report {
+		a {
+			float: right;
+		}
 	}
 
 	h5 {

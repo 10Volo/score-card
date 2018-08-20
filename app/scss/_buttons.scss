@@ -46,3 +46,44 @@ buttons
 	}
 }
 
+a {
+	display: block;
+	@include font($bold, 14px);
+	color: #FFFFFF;
+	@include transition(.3s);
+	height: 36px;
+	line-height: 36px;
+	border: transparent;
+
+	&:hover {
+		color: $textLight;
+	}
+
+	&.btn-nav-line {
+		border: 1px solid #fff;
+		width: 140px;
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		@include radius(100px);
+		@include transition(.3s);
+
+		&:hover {
+			background: #fff;
+			color: $primaryColor;
+		}
+	}
+}
+
+
+.main-btn {
+	color: #ffffff !important;
+	background-color: #4f8e39;
+	&:hover {
+		background: none !important;
+	}
+	&.btn-nav-line {
+		color: #ffffff !important;
+		border: 1px solid #ffffff !important;
+	}
+}

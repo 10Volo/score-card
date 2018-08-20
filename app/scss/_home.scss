@@ -42,7 +42,7 @@ home
 		@include transition(.3s);
 	}
 
-	&:hover, &.active {
+	&.active {
 		color: $textLight;
 
 		&:before {
