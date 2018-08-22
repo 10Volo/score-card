@@ -485,6 +485,7 @@ buttons
 
 a {
   display: block;
+  cursor: pointer;
   font-weight: 700;
   font-size: 14px;
   color: #FFFFFF;
@@ -779,6 +780,8 @@ welcome area
       left: 0.53px;
       color: #fff;
       margin-bottom: 30px; }
+    .welcome-area .welcome-content .apps img {
+      width: 380px; }
 
 @media (max-width: 991px) {
   .welcome-area .welcome-content {

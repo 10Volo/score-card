@@ -48,6 +48,7 @@ buttons
 
 a {
 	display: block;
+	cursor: pointer;
 	@include font($bold, 14px);
 	color: #FFFFFF;
 	@include transition(.3s);

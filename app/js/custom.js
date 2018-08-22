@@ -118,6 +118,15 @@
 			}
 		}
 	});
-
-
+	
+	$(document).ready(function () {
+		$("#OpenDialog").click(function () {
+			//$("#dialog").dialog({modal: true, height: 590, width: 1005 });
+			var w = window.open("", "popupWindow", "width=600, height=400, scrollbars=yes");
+			var $w = $(w.document.body);
+			$w.html("<script type='text/javascript' src='https://visualblaze.formstack.com/forms/js.php/scorecard_social'></script><noscript><a href='https://visualblaze.formstack.com/forms/scorecard_social' title='Online Form'>Online Form - Scorecard Social Sign Up</a></noscript>");
+		});
+	});
+	
+	
 })(window.jQuery);
