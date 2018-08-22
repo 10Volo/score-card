@@ -738,6 +738,25 @@ header
     display: -ms-flexbox !important;
     display: flex !important; } }
 
+@media (max-width: 992px) {
+  .header-area .main-nav .nav {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin: 0 !important; } }
+
+@media (min-width: 992px) {
+  .header-area .main-nav .nav {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important; } }
+
 @media (max-width: 480px) {
   .header-area {
     padding: 0 15px !important; } }
