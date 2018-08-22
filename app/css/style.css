@@ -738,6 +738,10 @@ header
     display: -ms-flexbox !important;
     display: flex !important; } }
 
+@media (max-width: 480px) {
+  .header-area {
+    padding: 0 15px !important; } }
+
 /* 
 ---------------------------------------------
 welcome area

@@ -304,3 +304,9 @@ header
 		}
 	}
 }
+
+@media (max-width : 480px) {
+	.header-area {
+		padding: 0 15px !important;
+	}
+}
