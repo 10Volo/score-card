@@ -1,0 +1,46 @@
+@media (max-width: 767px) {
+	#fsLightboxClose2988195 {
+		width: 100%;
+		left: 0;
+	}
+}
+
+@media (max-width: 650px) {
+	#fsLightbox2988195 {
+		width: 100%;
+		#fsLightboxContent2988195 {
+			width: 100% !important;
+			#fsLightboxClose2988195 {
+				width: 100%;
+			}
+
+			.fsRowBody input[type=text] {
+				width: 100% !important;
+			}
+			.fsRowBody input[type=email] {
+				width: 100% !important;
+			}
+			.fsRowBody input[type=number] {
+				width: 100% !important;
+			}
+			#fsRow2988195-8 {
+				#fsCell61759979 {
+					.fsSubFieldGroup {
+						.fsSubField {
+							float: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 414px) {
+	#fsLightbox2988195 {
+		height: auto !important;
+		#fsLightboxContent2988195 {
+			height: auto !important;
+		}
+	}
+}

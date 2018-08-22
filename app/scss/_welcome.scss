@@ -79,6 +79,13 @@ welcome area
 		.apps {
 			img {
 				width: 380px;
+				@media (max-width: 375px) {
+
+					width: 320px;
+				}
+				@media (max-width: 375px) {
+					width: 280px;
+				}
 			}
 		}
 	}

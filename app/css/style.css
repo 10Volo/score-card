@@ -574,7 +574,7 @@ header
           .header-area .main-nav .nav li a.btn-nav-line:hover {
             background: #fff;
             color: #4886FF; }
-  .header-area .main-nav .menu-trigger {
+  .header-area .main-nav .menu-triggerk {
     cursor: pointer;
     display: block;
     position: absolute;
@@ -585,9 +585,9 @@ header
     z-index: 99;
     right: 40px;
     display: none; }
-    .header-area .main-nav .menu-trigger span,
-    .header-area .main-nav .menu-trigger span:before,
-    .header-area .main-nav .menu-trigger span:after {
+    .header-area .main-nav .menu-triggerk span,
+    .header-area .main-nav .menu-triggerk span:before,
+    .header-area .main-nav .menu-triggerk span:after {
       -webkit-transition: all 0.4s;
       transition: all 0.4s;
       background-color: #3B566E;
@@ -596,8 +596,8 @@ header
       width: 26px;
       height: 2px;
       left: 0; }
-    .header-area .main-nav .menu-trigger span:before,
-    .header-area .main-nav .menu-trigger span:after {
+    .header-area .main-nav .menu-triggerk span:before,
+    .header-area .main-nav .menu-triggerk span:after {
       -webkit-transition: all 0.4s;
       transition: all 0.4s;
       background-color: #3B566E;
@@ -606,32 +606,32 @@ header
       width: 30px;
       height: 2px;
       left: 0; }
-    .header-area .main-nav .menu-trigger span:after {
+    .header-area .main-nav .menu-triggerk span:after {
       width: 22px; }
-    .header-area .main-nav .menu-trigger span:before,
-    .header-area .main-nav .menu-trigger span:after {
+    .header-area .main-nav .menu-triggerk span:before,
+    .header-area .main-nav .menu-triggerk span:after {
       content: ""; }
-    .header-area .main-nav .menu-trigger span {
+    .header-area .main-nav .menu-triggerk span {
       top: 16px; }
-      .header-area .main-nav .menu-trigger span:before {
+      .header-area .main-nav .menu-triggerk span:before {
         -webkit-transform-origin: 33% 100%;
         transform-origin: 33% 100%;
         top: -10px;
         z-index: 10; }
-      .header-area .main-nav .menu-trigger span:after {
+      .header-area .main-nav .menu-triggerk span:after {
         -webkit-transform-origin: 33% 0;
         transform-origin: 33% 0;
         top: 10px; }
-    .header-area .main-nav .menu-trigger.active span,
-    .header-area .main-nav .menu-trigger.active span:before,
-    .header-area .main-nav .menu-trigger.active span:after {
+    .header-area .main-nav .menu-triggerk.active span,
+    .header-area .main-nav .menu-triggerk.active span:before,
+    .header-area .main-nav .menu-triggerk.active span:after {
       background-color: transparent;
       width: 100%; }
-    .header-area .main-nav .menu-trigger.active span:before {
+    .header-area .main-nav .menu-triggerk.active span:before {
       -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
       transform: translateY(6px) translateX(1px) rotate(45deg);
       background-color: #3B566E; }
-    .header-area .main-nav .menu-trigger.active span:after {
+    .header-area .main-nav .menu-triggerk.active span:after {
       -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
       transform: translateY(-6px) translateX(1px) rotate(-45deg);
       background-color: #3B566E; }
@@ -660,6 +660,14 @@ header
 
 @media (max-width: 991px) {
   .header-area {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background: #fff;
     height: 80px;
     -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
@@ -667,15 +675,27 @@ header
     .header-area .container {
       padding: 0px; }
     .header-area .logo {
-      margin-top: 22px !important;
-      margin-left: 30px; }
+      margin: 0 !important;
+      height: auto; }
     .header-area .light-logo {
       display: none !important; }
     .header-area .dark-logo {
       display: block !important; }
-    .header-area .menu-trigger {
+    .header-area .menu-triggerk {
       display: block !important; }
     .header-area .main-nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       overflow: hidden; }
       .header-area .main-nav .nav {
         float: none;
@@ -706,7 +726,10 @@ header
               height: 50px;
               line-height: 50px;
               text-align: left;
-              border-radius: 0px; } }
+              border-radius: 0px; }
+      .header-area .main-nav .menu-triggerk {
+        position: static;
+        width: auto; } }
 
 @media (min-width: 992px) {
   .header-area .main-nav .nav {
@@ -782,6 +805,12 @@ welcome area
       margin-bottom: 30px; }
     .welcome-area .welcome-content .apps img {
       width: 380px; }
+      @media (max-width: 375px) {
+        .welcome-area .welcome-content .apps img {
+          width: 320px; } }
+      @media (max-width: 375px) {
+        .welcome-area .welcome-content .apps img {
+          width: 280px; } }
 
 @media (max-width: 991px) {
   .welcome-area .welcome-content {
@@ -1790,3 +1819,30 @@ footer {
     margin-bottom: 15px; }
   footer .footer-nav {
     margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  #fsLightboxClose2988195 {
+    width: 100%;
+    left: 0; } }
+
+@media (max-width: 650px) {
+  #fsLightbox2988195 {
+    width: 100%; }
+    #fsLightbox2988195 #fsLightboxContent2988195 {
+      width: 100% !important; }
+      #fsLightbox2988195 #fsLightboxContent2988195 #fsLightboxClose2988195 {
+        width: 100%; }
+      #fsLightbox2988195 #fsLightboxContent2988195 .fsRowBody input[type=text] {
+        width: 100% !important; }
+      #fsLightbox2988195 #fsLightboxContent2988195 .fsRowBody input[type=email] {
+        width: 100% !important; }
+      #fsLightbox2988195 #fsLightboxContent2988195 .fsRowBody input[type=number] {
+        width: 100% !important; }
+      #fsLightbox2988195 #fsLightboxContent2988195 #fsRow2988195-8 #fsCell61759979 .fsSubFieldGroup .fsSubField {
+        float: none; } }
+
+@media (max-width: 414px) {
+  #fsLightbox2988195 {
+    height: auto !important; }
+    #fsLightbox2988195 #fsLightboxContent2988195 {
+      height: auto !important; } }
